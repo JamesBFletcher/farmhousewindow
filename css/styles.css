@@ -28,7 +28,7 @@ p {
 /* Containers */
 
 .container-fluid{
-  padding: 7% 15%;
+  padding: 2% 15%;
 }
 
 /* Sections */
@@ -202,4 +202,31 @@ p {
 
 .bgimage p {
   color: white;
+}
+
+.workimage {
+  width:100%;
+  height:70%;
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://content.fortune.com/wp-content/uploads/2020/04/Farm-Zuchinni-Harvest-Florida.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.workimage h5 {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-family: "Ubuntu";
+  color: white;
+}
+
+.workimage p {
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
