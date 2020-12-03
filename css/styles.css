@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   color: #8f8f8f;
+  font-size: 1.1rem;
 }
 
 /* Headings */
@@ -25,11 +26,22 @@ p {
   line-height: 1.5;
 }
 
+P.drop-cap:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 5.5rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.05em 0;
+}
+
 /* Containers */
 
 .container-fluid{
-  padding: 2% 15%;
-}
+  padding: 7% 15%;
+} 
+
+
+
 
 /* Sections */
 
@@ -41,7 +53,6 @@ p {
 .white-section {
   background-color: #fff;
 }
-
 /* Navigation Bar */
 
 .navbar {
@@ -146,6 +157,50 @@ p {
   margin: 20px 20px 50px;
 }
 
+/* Research sections */
+
+#research-dark{
+  background-color: #565656;
+}
+
+.research-section {
+  padding-top: 40px;
+}
+
+.img-col {
+  /* display: flex;
+  align-items: center;
+  flex-wrap: wrap; */
+  position: relative;
+  /* height: 300px; */
+  margin:  30px 10px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background:url(https://foodprint.org/wp-content/uploads/2020/04/AdobeStock_11334480_1920x960.jpg)
+}
+
+/* Quote section */
+
+#quotes {
+  background-color: #565656;
+}
+
+#quotes .carousel-item img {
+  max-width: 40%;
+}
+/* CHANGE LATER */
+#quotes .carousel-item {
+  height: 600px;
+  padding-top:2%; 
+  padding-bottom:2%;
+  overflow: hidden;
+}
+
+/* .carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+} */
+
 /* Pricing Section */
 
 #pricing {
@@ -200,21 +255,43 @@ p {
   color: white;
 }
 
+
 .bgimage p {
   color: white;
 }
 
 .workimage {
+  padding: 10% 0%;
   width:100%;
   height:70%;
   background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://content.fortune.com/wp-content/uploads/2020/04/Farm-Zuchinni-Harvest-Florida.jpg');
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center top;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
+}
+
+.business-image {
+  padding: 10% 0%;
+  width:100%;
+  height:70%;
+  background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://storage.needpix.com/rsynced_images/ny-cityscape.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
 }
 .workimage h5 {
-  font-size: 3rem;
+  font-size: 4rem;
+  /* -webkit-text-stroke: 2px black; */
+  line-height: 1.5;
+  font-family: "Ubuntu";
+  color: white;
+}
+
+.business-image h5 {
+  font-size: 4rem;
+  /* -webkit-text-stroke: 2px black; */
   line-height: 1.5;
   font-family: "Ubuntu";
   color: white;
